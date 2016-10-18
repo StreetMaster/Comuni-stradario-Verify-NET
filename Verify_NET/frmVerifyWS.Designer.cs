@@ -61,6 +61,10 @@
             this.lblOutEsito = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtKey = new System.Windows.Forms.TextBox();
+            this.txtOutScoreComune = new System.Windows.Forms.TextBox();
+            this.lblOutScoreComune = new System.Windows.Forms.Label();
+            this.txtOutScoreStrada = new System.Windows.Forms.TextBox();
+            this.lblOutScoreStrada = new System.Windows.Forms.Label();
             this.gbInput.SuspendLayout();
             this.gbOutput.SuspendLayout();
             this.gbCandidato.SuspendLayout();
@@ -172,6 +176,10 @@
             // 
             // gbOutput
             // 
+            this.gbOutput.Controls.Add(this.txtOutScoreComune);
+            this.gbOutput.Controls.Add(this.lblOutScoreComune);
+            this.gbOutput.Controls.Add(this.txtOutScoreStrada);
+            this.gbOutput.Controls.Add(this.lblOutScoreStrada);
             this.gbOutput.Controls.Add(this.btnMoveNext);
             this.gbOutput.Controls.Add(this.btnMovePrev);
             this.gbOutput.Controls.Add(this.lblCandNum);
@@ -232,7 +240,7 @@
             this.gbCandidato.Controls.Add(this.lblOutIndirizzo);
             this.gbCandidato.Controls.Add(this.txtOutComune);
             this.gbCandidato.Controls.Add(this.lblOutComune);
-            this.gbCandidato.Location = new System.Drawing.Point(22, 89);
+            this.gbCandidato.Location = new System.Drawing.Point(24, 89);
             this.gbCandidato.Name = "gbCandidato";
             this.gbCandidato.Size = new System.Drawing.Size(816, 153);
             this.gbCandidato.TabIndex = 24;
@@ -278,7 +286,7 @@
             // 
             // txtOutCap
             // 
-            this.txtOutCap.Location = new System.Drawing.Point(671, 24);
+            this.txtOutCap.Location = new System.Drawing.Point(660, 21);
             this.txtOutCap.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtOutCap.Name = "txtOutCap";
             this.txtOutCap.ReadOnly = true;
@@ -288,7 +296,7 @@
             // lblOutCap
             // 
             this.lblOutCap.AutoSize = true;
-            this.lblOutCap.Location = new System.Drawing.Point(630, 24);
+            this.lblOutCap.Location = new System.Drawing.Point(613, 24);
             this.lblOutCap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOutCap.Name = "lblOutCap";
             this.lblOutCap.Size = new System.Drawing.Size(39, 14);
@@ -335,7 +343,7 @@
             // 
             // txtOutCodErr
             // 
-            this.txtOutCodErr.Location = new System.Drawing.Point(274, 31);
+            this.txtOutCodErr.Location = new System.Drawing.Point(265, 31);
             this.txtOutCodErr.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtOutCodErr.Name = "txtOutCodErr";
             this.txtOutCodErr.ReadOnly = true;
@@ -345,7 +353,7 @@
             // lblOutCodErr
             // 
             this.lblOutCodErr.AutoSize = true;
-            this.lblOutCodErr.Location = new System.Drawing.Point(189, 35);
+            this.lblOutCodErr.Location = new System.Drawing.Point(180, 35);
             this.lblOutCodErr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOutCodErr.Name = "lblOutCodErr";
             this.lblOutCodErr.Size = new System.Drawing.Size(87, 14);
@@ -354,7 +362,7 @@
             // 
             // txtOutNumCand
             // 
-            this.txtOutNumCand.Location = new System.Drawing.Point(435, 32);
+            this.txtOutNumCand.Location = new System.Drawing.Point(406, 30);
             this.txtOutNumCand.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtOutNumCand.Name = "txtOutNumCand";
             this.txtOutNumCand.ReadOnly = true;
@@ -364,7 +372,7 @@
             // lblOutNumCand
             // 
             this.lblOutNumCand.AutoSize = true;
-            this.lblOutNumCand.Location = new System.Drawing.Point(350, 33);
+            this.lblOutNumCand.Location = new System.Drawing.Point(321, 36);
             this.lblOutNumCand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOutNumCand.Name = "lblOutNumCand";
             this.lblOutNumCand.Size = new System.Drawing.Size(87, 14);
@@ -409,6 +417,44 @@
             this.txtKey.Size = new System.Drawing.Size(348, 21);
             this.txtKey.TabIndex = 4;
             this.txtKey.Text = "Specificare una chiave per il servizio Verify";
+            // 
+            // txtOutScoreComune
+            // 
+            this.txtOutScoreComune.Location = new System.Drawing.Point(610, 64);
+            this.txtOutScoreComune.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtOutScoreComune.Name = "txtOutScoreComune";
+            this.txtOutScoreComune.ReadOnly = true;
+            this.txtOutScoreComune.Size = new System.Drawing.Size(49, 22);
+            this.txtOutScoreComune.TabIndex = 35;
+            // 
+            // lblOutScoreComune
+            // 
+            this.lblOutScoreComune.AutoSize = true;
+            this.lblOutScoreComune.Location = new System.Drawing.Point(498, 67);
+            this.lblOutScoreComune.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOutScoreComune.Name = "lblOutScoreComune";
+            this.lblOutScoreComune.Size = new System.Drawing.Size(107, 14);
+            this.lblOutScoreComune.TabIndex = 34;
+            this.lblOutScoreComune.Text = "Score Comune:";
+            // 
+            // txtOutScoreStrada
+            // 
+            this.txtOutScoreStrada.Location = new System.Drawing.Point(773, 64);
+            this.txtOutScoreStrada.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtOutScoreStrada.Name = "txtOutScoreStrada";
+            this.txtOutScoreStrada.ReadOnly = true;
+            this.txtOutScoreStrada.Size = new System.Drawing.Size(65, 22);
+            this.txtOutScoreStrada.TabIndex = 33;
+            // 
+            // lblOutScoreStrada
+            // 
+            this.lblOutScoreStrada.AutoSize = true;
+            this.lblOutScoreStrada.Location = new System.Drawing.Point(667, 67);
+            this.lblOutScoreStrada.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOutScoreStrada.Name = "lblOutScoreStrada";
+            this.lblOutScoreStrada.Size = new System.Drawing.Size(98, 14);
+            this.lblOutScoreStrada.TabIndex = 32;
+            this.lblOutScoreStrada.Text = "Score Strada:";
             // 
             // frmVerifyWS
             // 
@@ -471,6 +517,10 @@
         private System.Windows.Forms.Label lblOutIndirizzo;
         private System.Windows.Forms.TextBox txtOutComune;
         private System.Windows.Forms.Label lblOutComune;
+        private System.Windows.Forms.TextBox txtOutScoreComune;
+        private System.Windows.Forms.Label lblOutScoreComune;
+        private System.Windows.Forms.TextBox txtOutScoreStrada;
+        private System.Windows.Forms.Label lblOutScoreStrada;
     }
 }
 
