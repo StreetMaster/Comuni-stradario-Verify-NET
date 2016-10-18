@@ -1,5 +1,5 @@
 # DemoVerifyNET
-Demo .NET per l'utilizzo del ws VERIFY di verifica e normalizzazione indirizzi italiani di StreetMaster
+Demo .NET per l'utilizzo del ws soap VERIFY di verifica e normalizzazione indirizzi italiani di StreetMaster
 
 Il progetto è sviluppato in C# - Framework 4.6.1
 
