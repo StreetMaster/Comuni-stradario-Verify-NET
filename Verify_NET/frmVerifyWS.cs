@@ -20,7 +20,7 @@ namespace Verify_NET
     ///     
     /// Per l'utilizzo registrarsi sul sito http://streetmaster.it e richiedere la chiave per il servizio VERIFY 
     /// 
-    ///  2016 - Software by StreetMaster (c)
+    /// 2016 - Software by StreetMaster (c)
     /// </summary>
     public partial class frmVerifyWS : Form
     {
@@ -44,7 +44,7 @@ namespace Verify_NET
             Cursor = Cursors.WaitCursor;
             Application.DoEvents();
 
-            // oggetto client per l'utilizzo del ws FILL
+            // oggetto client per l'utilizzo del ws VERIFY
             var verifyObj = new VerifyWS.VerifyClient();
 
             // classe di input
