@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Verify_NET
@@ -16,7 +9,7 @@ namespace Verify_NET
     /// realizzato da StreetMaster Italia
     /// 
     /// L'end point del servizio è 
-    ///     http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smws/verify?wsdl
+    ///     https://streetmaster.streetmaster.it/smws/verify?wsdl
     ///     
     /// Per l'utilizzo registrarsi sul sito http://streetmaster.it e richiedere la chiave per il servizio VERIFY 
     /// 
@@ -48,13 +41,14 @@ namespace Verify_NET
             var verifyObj = new VerifyWS.VerifyClient();
 
             // classe di input
-            var inVerify = new VerifyWS.inputCommon();
-
-            // valorizzazione input
-            inVerify.localita = txtInComune.Text;
-            inVerify.cap = txtInCap.Text;
-            inVerify.provincia = txtInProvincia.Text;
-            inVerify.indirizzo = txtInIndirizzo.Text;
+            var inVerify = new VerifyWS.inputCommon
+            {
+                // valorizzazione input
+                localita = txtInComune.Text,
+                cap = txtInCap.Text,
+                provincia = txtInProvincia.Text,
+                indirizzo = txtInIndirizzo.Text
+            };
 
             // chiamata al servizio
             totOutVerifyWS = verifyObj.Verify(inVerify, txtKey.Text);

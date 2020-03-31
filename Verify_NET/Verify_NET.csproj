@@ -105,8 +105,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\VerifyWS\verify.wsdl" />
-    <None Include="Service References\VerifyWS\verify.xsd">
+    <None Include="Service References\VerifyWS\verify1.wsdl" />
+    <None Include="Service References\VerifyWS\verify1.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\VerifyWS\Verify_NET.VerifyWS.totOutVerify.datasource">
